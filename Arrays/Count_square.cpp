@@ -1,36 +1,41 @@
-//DSA 
+//DSA
 //DAY 8
-//Problem: You are given a number N, you have to output the number of integers less than N in the sample space S.
+//Probelm: Given a number N, you have to output the number of integers less than N in the sample space S.
 
 #include <bits/stdc++.h>
 using namespace std;
 
-class Solution{
+
+class Solution {
   public:
-    int middle(int A, int B, int C){
-        if(B<max(A,C) && B>min(A,C)){
-             return B;
+    int countSquares(int N) {
+        int count = 0;
+        for(int i =1;i*i<N;i++){
+            count++;
         }
-        else if(A<max(B,C) && A>min(B,C)){
-              return A;
-        }
-        else{
-            return C;
-        }
-            
+        return count;
+        
+        
     }
 };
 
-int main()
-{
+
+int main() {
     int t;
-    cin>>t;
-    while(t--)
-    {
-        int A,B,C;
-        cin>>A>>B>>C;
+    cin >> t;
+    while (t--) {
+        int N;
+        
+        cin>>N;
+
         Solution ob;
-        cout<<ob.middle(A,B,C) <<"\n";
+        cout << ob.countSquares(N) << endl;
     }
     return 0;
-} 
+}  
+
+//APPROACH 2
+
+int countSquares(int N) {
+   return sqrt(N-1);
+}
