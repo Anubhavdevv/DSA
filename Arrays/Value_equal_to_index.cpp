@@ -1,3 +1,8 @@
+//DSA
+//DAY 8
+//Problem: Value equal to index value 
+//Topics: Arrays and Searching
+
 #include<bits/stdc++.h>
 
 using namespace std;
