@@ -1,3 +1,7 @@
+//DSA
+//DAY 8
+//Problem: Given three distinct numbers A, B and C. Find the number with value in middle
+
 #include <bits/stdc++.h>
 using namespace std;
 
